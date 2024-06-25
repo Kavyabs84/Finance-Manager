@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-screen">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+    
+    <div id="dashboard" style="display: none;">
+        <h2>Dashboard</h2>
+        <div>
+            <h3>Budget</h3>
+            <p id="budget-amount">$0</p>
+            <input type="number" id="budget-input" placeholder="Set Budget">
+            <button onclick="setBudget()">Set Budget</button>
+        </div>
+        
+        <div>
+            <h3>Expenses</h3>
+            <ul id="expense-list"></ul>
+            <input type="text" id="expense-description" placeholder="Description">
+            <input type="number" id="expense-amount" placeholder="Amount">
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+
+        <div>
+            <h3>Investments</h3>
+            <p>Investment tracking coming soon...</p>
+        </div>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
